@@ -1,0 +1,37 @@
+body {
+	font: 75% 'Lucida Grande', Verdana, Arial, Sans-Serif; 	
+	color: #111;
+	background: #FFFFFF;
+	text-align: left;
+	margin: 0 20px 30px;
+	}
+
+h1 {
+	font-family: 'Trebuchet MS', Verdana, Sans-Serif;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 25px 0px 0;
+	text-align: left;
+	border-bottom: 1px solid #aaa;
+	}
+
+name {
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+	
+imagetext {
+	font-size: 0.9em;
+	font-style: italic;
+	}
+
+letter {
+	text-decoration: underline;
+	}
+
+imageleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	}
