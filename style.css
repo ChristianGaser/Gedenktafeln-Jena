@@ -1,14 +1,16 @@
 body {
-	font: 75% 'Lucida Grande', Verdana, Arial, Sans-Serif; 	
-	color: #111;
-	background: #FFFFFF;
+  font: small 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	text-align: left;
 	margin: 0 20px 30px;
+  color: #444;
+  width: 95%;
+  border: 0px;
+  padding: 20px;
+  background: #F5F5F5;
 	}
 
 h1 {
-	font-family: 'Trebuchet MS', Verdana, Sans-Serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	letter-spacing: -1px;
 	margin: 0;
