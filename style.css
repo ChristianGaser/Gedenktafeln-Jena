@@ -1,39 +1,71 @@
+/* Base layout */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
 body {
-  font: small 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	text-align: left;
-	margin: 0 20px 30px;
-  color: #444;
-  width: 95%;
-  border: 0px;
-  padding: 20px;
-  background: #F5F5F5;
-	}
+	margin: 0;
+	color: #444;
+	background: #F5F5F5;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', 'Lucida Grande', Verdana, sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+/* Page container */
+body > header,
+main {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 16px 20px 24px;
+}
 
 h1 {
-	font-size: 1.5em;
-	font-weight: bold;
-	letter-spacing: -1px;
-	margin: 0;
-	padding: 25px 0px 0;
-	text-align: left;
-	border-bottom: 1px solid #aaa;
-	}
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 8px 0 12px;
+  padding-top: 8px;
+  border-bottom: 1px solid #aaa;
+}
+
+/* Normalize custom tags to behave as inline-block or block */
+name,
+imagetext,
+letter,
+imageleft {
+  display: inline;
+}
 
 name {
-	font-size: 1.2em;
-	font-weight: bold;
-	}
+  font-size: 1.125rem;
+  font-weight: 700;
+}
 	
 imagetext {
-	font-size: 0.9em;
-	font-style: italic;
-	}
+  font-size: 0.95rem;
+  font-style: italic;
+}
 
 letter {
-	text-decoration: underline;
-	}
+  text-decoration: underline;
+}
 
 imageleft {
 	padding: 4px;
 	margin: 0 7px 2px 0;
-	}
+}
+
+/* Images */
+img { max-width: 100%; height: auto; }
+
+/* Typography */
+p { margin: 0 0 0.8em; }
+strong { font-weight: 700; }
+a { color: #0645ad; text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+
+/* Small devices spacing */
+@media (max-width: 480px) {
+	body > header,
+	main { padding: 12px 14px 18px; }
+}
